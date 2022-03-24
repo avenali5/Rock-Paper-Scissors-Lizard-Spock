@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  user-select: none;
+}
+html {
+  // overflow: hidden;
+}
+body {
+  background: linear-gradient(117.21deg, #142b5f 12.64%, #506c75 102.66%);
+  min-height: 100vh;
+  padding-bottom: 10rem;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .glass {
+    position: absolute;
+    width: 80%;
+    max-width: 40rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+  }
+}
+.game-container {
+  // animation: bodyFall 2s 1s forwards ease-in-out;
+  transition: 0.5s all;
+  height: 100%;
+  width: 100%;
+}
+@keyframes bodyFall {
+  to {
+    transform: rotate(56deg) translate(60%, 200%);
+  }
+}

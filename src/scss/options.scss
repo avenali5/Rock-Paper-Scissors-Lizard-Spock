@@ -1,0 +1,68 @@
+.option {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  img {
+    width: 35%;
+    transition: 0.2s all;
+    position: absolute;
+  }
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+    span {
+      display: block;
+    }
+  }
+  span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-weight: bold;
+    color: white;
+    transform: translate(-50%, -150%);
+    display: none;
+  }
+  .inner-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e5e5e5;
+    box-shadow: inset 0px 4px 4px #bbbed4;
+    height: 80%;
+    width: 80%;
+    border-radius: 200px;
+  }
+}
+.paper {
+  background: linear-gradient(133deg, #5570f2 4.58%, #4865f4 104.71%);
+  box-shadow: 0px 6px 0px #2643c1;
+}
+.rock {
+  background: linear-gradient(133deg, #df3c58 4.58%, #da304e 104.71%);
+  box-shadow: 0px 6px 0px #9f1731;
+}
+.scissors {
+  background: linear-gradient(133deg, #eca41f 4.58%, #eba00f 104.71%);
+
+  box-shadow: 0px 6px 0px #c76d17;
+}
+.lizard {
+  background: linear-gradient(135deg, #8661de 5%, #8046e8 100%);
+  box-shadow: 0px 6px 0px #6136b1;
+}
+.spock {
+  background: linear-gradient(135deg, #54bed2 5%, #34b3c5 100%);
+  box-shadow: 0px 6px 0px #2c90aa;
+}
+
+@media (min-width: 768px) {
+  .option {
+    width: 9rem;
+    height: 9rem;
+  }
+}
